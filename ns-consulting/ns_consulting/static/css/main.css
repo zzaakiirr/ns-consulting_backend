@@ -200,8 +200,20 @@ div[class*="banner-center"],
 
 .banner-left-center {
   display: inline-block;
-  background-color: #1c1c40;
   padding: 1rem 1.5rem;
+}
+
+.poll {
+  background-color: #f8f8f8;
+  color: #000;
+}
+
+.poll-header {
+  margin: 0;
+  padding-top: 1rem;
+  text-transform: uppercase;
+  font-family: Intro-Bold;
+  font-size: 1.2rem;
 }
 
 .banner-left-center .angle-down {
@@ -275,11 +287,11 @@ p.banner-header-2 {
   max-width: 100%;
 }
 
-.banner-right-center .banner-text {
+.poll-question {
   padding: 0 .4rem;
 }
 
-.banner-right-center .poll-choice {
+.poll-choice {
   margin-left: 1rem;
 }
 
