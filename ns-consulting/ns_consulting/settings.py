@@ -138,7 +138,8 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'ns_consulting'
+    'ns_consulting',
+    'colorfield',
 )
 
 LANGUAGES = (
