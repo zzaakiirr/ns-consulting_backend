@@ -45,7 +45,7 @@ ROOT_URLCONF = 'ns_consulting.urls'
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'Europe/Moscow'
 
@@ -142,19 +142,17 @@ INSTALLED_APPS = (
 )
 
 LANGUAGES = (
-    ## Customize this
-    ('en', gettext('en')),
+    ('ru', gettext('ru')),
 )
 
 CMS_LANGUAGES = {
-    ## Customize this
     1: [
         {
-            'code': 'en',
-            'name': gettext('en'),
+            'code': 'ru',
+            'name': gettext('ru'),
             'redirect_on_fallback': True,
             'public': True,
-            'hide_untranslated': False,
+            'hide_untranslated': True,
         },
     ],
     'default': {
