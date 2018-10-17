@@ -1,41 +1,161 @@
 {% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
 <!doctype html>
 <html>
-    <head>
-        <title>{% block title %}This is my new project home page{% endblock title %}</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <style type="text/css">
-            .nav {
-                padding-left: 0;
-            }
-            .nav li {
-                display: inline;
-                list-style-type: none;
-                padding-right: 20px;
-            }
-            .container {
-                width: 940px;
-                margin: 0 auto
-            }
-            .content {
-                float: left;
-                width: 80%;
-            }
-            .sidebar {
-                float: left;
-                width: 20%;
-            }
-        </style>
-        {% render_block "css" %}
-    </head>
-    <body>
-        {% cms_toolbar %}
-        <div class="container">
-            <ul class="nav">
-                {% show_menu 0 100 100 100 %}
-            </ul>
-            {% block content %}{% endblock content %}
+  <head>
+  <title>{% block title %}ns-consulting{% endblock title %}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style type="text/css">
+  .nav {
+    padding-left: 0;
+  }
+  .nav li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+  }
+  .container {
+    width: 940px;
+    margin: 0 auto
+  }
+  .content {
+    float: left;
+    width: 80%;
+  }
+  .sidebar {
+    float: left;
+    width: 20%;
+  }
+  </style>
+  <link rel="stylesheet" href="{% static "css/flexboxgrid2.css" %}">
+  <link rel="stylesheet" href="{% static "css/main.css" %}">
+  <link rel="stylesheet" href="{% static "css/media_queries.css" %}">
+  <link rel="stylesheet" href="{% static "css/radio_style.css" %}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="{% static "css/hamburgers.css" %}" rel="stylesheet">
+  {% render_block "css" %}
+</head>
+<body>
+  {% cms_toolbar %}
+  <header>
+    <div class="row header">
+      <div class="col-xs-12 img-wrapper">
+        <img src="{% static "img/logo.png" %}" alt="Logo">
+      </div>
+    </div>
+    <nav class="row center-xs navbar" id="topNavbar">
+      <div class="col-xs-12">
+        <button class="hamburger hamburger--spin" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <span><a href="">Главная</a></span>
+        <span><a href="">О союзе</a></span>
+        <span><a href="">Услуги</a></span>
+        <span><a href="">Топ-5 событий</a></span>
+        <span><a href="">Семинары</a></span>
+        <span><a href="">Контакты</a></span>
+        <span><a href="">Партнеры</a></span>
+      </div>
+    </nav>
+    <nav class="row hidden-md start-xs navbar" id="topNavbarSM">
+      <div class="col-xs-12 navbar-item">
+        <a href="">Главная</a>
+      </div>
+      <div class="col-xs-12 navbar-item">
+        <a href="">О союзе</a>
+      </div>
+      <div class="col-xs-12 navbar-item">
+        <a href="">Услуги</a>
+      </div>
+      <div class="col-xs-12 navbar-item">
+        <a href="">Топ-5 событий</a>
+      </div>
+      <div class="col-xs-12 navbar-item">
+        <a href="">Семинары</a>
+      </div>
+      <div class="col-xs-12 navbar-item">
+        <a href="">Контакты</a>
+      </div>
+      <div class="col-xs-12">
+        <a href="">Партнеры</a>
+      </div>
+    </nav>
+  </header>
+  <div class="container main">
+    <div class="row start-xs center-md searcher-wrapper">
+      <div class="col-xs-10 col-sm-9 col-md-11 searcher-input-wrapper">
+        <input type="text" class="searcher-input">
+      </div>
+      <div class="col-xs-1 end-xs col-sm-1 col-md-1 searcher-btn-wrapper">
+        <button type="submit" class="searcher-submit-btn">
+          <img src="{% static "img/loupe.png" %}" alt="">
+        </button>
+      </div>
+    </div>
+    <div class="row banners">
+      <div class="col-lg-3">
+        <div class="row center-xs banners-left">
+          <div class="col-xs-12 col-md-12 col-lg-10 banner-left-top">
+            {% block left_top %}{% endblock left_top %}
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-10 banner-left-center">
+            {% block left_center %}{% endblock left_center %}
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-10 banner-left-bottom">
+            {% block left_bottom %}{% endblock left_bottom %}
+          </div>
         </div>
-        {% render_block "js" %}
-    </body>
+      </div>
+      <div class="col-lg-6">
+        <div class="row start-xs banners-center">
+          <div class="col-xs-12 banner-center-top">
+            {% block center_top %}{% endblock center_top %}
+          </div>
+          <div class="col-xs-12 banner-center-center">
+            {% block center_center %}{% endblock center_center %}
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="row center-xs banners-right">
+          <div class="col-xs-12 col-md-12 col-lg-10 banner-right-top">
+            {% block right_top %}{% endblock right_top %}
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-10 banner-right-center">
+            {% block right_center %}{% endblock right_center %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="row center-xs navbar" id="bottomNavbar">
+    <div class="col-xs-12">
+      <span><a href="">Главная</a></span>
+      <span><a href="">О союзе</a></span>
+      <span><a href="">Услуги</a></span>
+      <span><a href="">Топ-5 событий</a></span>
+      <span><a href="">Семинары</a></span>
+      <span><a href="">Контакты</a></span>
+      <span><a href="">Партнеры</a></span>
+    </div>
+  </nav>
+  <footer>
+    <div class="container">
+      <div class="row middle-xs footer-cols">
+        <div class="col-xs-12 col-md-6 col-lg-6 left-col middle-xs">
+          <p class="copyright">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Minus at, accusantium architecto omnis dolores,<br> pariatur voluptatibus rem itaque odio.</p>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-6 end-lg end-md right-col">
+          <a href=""><img src="{% static "img/mailru-rating.png" %}" alt="img1"></a>
+          <a href=""><img src="{% static "img/rating.png" %}" alt="img2"></a>
+          <a href=""><img src="{% static "img/rambler-rating.png" %}" alt="img3"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src='{% static "js/navbarBurger.js" %}'></script>
+  {% render_block "js" %}
+</body>
 </html>
