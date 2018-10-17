@@ -139,6 +139,7 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'ns_consulting',
+    'custom_plugins',
     'colorfield',
 )
 
