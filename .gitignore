@@ -7,4 +7,5 @@ local_settings.py
 
 /venv
 /ns-consulting/project.db
+/ns-consulting/media
 

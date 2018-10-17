@@ -5,7 +5,7 @@ from djangocms_link.models import Link
 from colorfield.fields import ColorField
 
 
-class FileWithBackgroundColor(File):
+class FileLinkWithBackgroundColor(File):
     file_background_color = ColorField(
         verbose_name=_('Цвет фона'),
         default='#f8f8f8'
