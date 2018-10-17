@@ -197,3 +197,71 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+CKEDITOR_SETTINGS = {
+    'toolbar': 'CMS',
+    'toolbar_CMS': [
+        {
+            'name': 'clipboard',
+            'items': [
+                'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-',
+                'Undo', 'Redo',
+            ],
+        },
+        {
+            'name': 'editing',
+            'items': [
+                'Find', 'Replace', '-',
+                'SelectAll', '-', 'Scayt',
+            ],
+        },
+        ['cmsplugins', 'cmswidget'],
+        ['Maximize', ], '/',
+        {
+            'name': 'basicstyles',
+            'items': [
+                'Bold', 'Italic', 'Underline', 'Strike',
+                'Subscript', 'Superscript', '-',
+                'CopyFormatting', 'RemoveFormat',
+            ],
+        },
+        {
+            'name': 'paragraph',
+            'items': [
+                'NumberedList', 'BulletedList', '-',
+                'Outdent', 'Indent', '-',
+                'Blockquote', '-',
+                'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'
+            ],
+        },
+        {
+            'name': 'links',
+            'items': ['Link', 'Unlink', 'Anchor', ],
+        },
+        {
+            'name': 'insert',
+            'items': [
+                'Table', 'HorizontalRule', 'Smiley',
+                'SpecialChar', 'PageBreak',
+            ],
+        },
+        {
+            'name': 'styles',
+            'items': ['Styles', 'Format', 'Font', 'FontSize', ]
+        },
+        {
+            'name': 'colors',
+            'items': ['TextColor', 'BGColor'],
+        },
+        {
+            'name': 'texttransform',
+            'items': [
+                'TransformTextToUppercase', 'TransformTextToLowercase',
+                'TransformTextCapitalize', 'TransformTextSwitcher',
+            ],
+        },
+        ['CreateDiv', ],
+    ],
+    'language': 'ru',
+    'extraPlugins': 'texttransform',
+}
