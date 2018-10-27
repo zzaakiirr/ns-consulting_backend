@@ -4,6 +4,7 @@
     padding-right: .9rem;
   }
 }
+
 @media (max-width: 1145px) {
   #topNavbar span:last-child, #bottomNavbar span:last-child {
     margin-top: 1.3rem;
@@ -124,4 +125,10 @@
 @media (max-width: 767px) {
   footer .right-col {
     padding-left: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  .container {
+    max-width: 100%;
+  }
 }
