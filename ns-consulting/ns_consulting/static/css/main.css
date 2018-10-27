@@ -9,6 +9,7 @@
 }
 
 html {
+  background-color: #f8f8f8;
   font-family: Intro-Book;
 }
 
@@ -25,8 +26,8 @@ html {
 }
 
 .headerMD {
-  margin-top: 2rem;
   margin-bottom: -.7rem;
+  margin-top: 2rem;
 }
 
 .navbar {
@@ -139,14 +140,14 @@ a:link {
 
 .text-under-img-wrapper {
   height: 100%;
-  position: relative;
   padding: 0; 
+  position: relative;
 }
 
 .text-under-img-wrapper img,
 .banner-center-center > img  {
-  width: 100%;
   margin-bottom: -.31rem;
+  width: 100%;
 }
 
 .text-under-img-wrapper div {
@@ -281,11 +282,6 @@ p.banner-header-2 {
   font-weight: bold;
   margin-top: .7rem;
   margin-bottom: 0;
-}
-
-.banners-right > div,
-.banners-right > a {
-  background-color: #f8f8f8;
 }
 
 .banner-right-top .banner-content,
