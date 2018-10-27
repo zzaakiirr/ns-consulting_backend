@@ -50,9 +50,8 @@
     float: left;
   }
 
-  .banners-right:not(:first-child) {
-    padding-left: 2.2rem;
-    padding-right: 0;
+  .banners-center .row > div {
+    padding: 0;
   }
 
   #bottomNavbar {
@@ -61,6 +60,12 @@
 
   footer .container {
     padding: 0;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+  .banners-center .row {
+    padding-right: 1.9rem;
   }
 }
 
