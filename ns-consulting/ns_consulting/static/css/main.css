@@ -12,7 +12,7 @@ html {
   font-family: Intro-Book;
 }
 
-header .img-wrapper {
+.headerLG .img-wrapper, .headerMD .img-wrapper {
   background-image: url(../img/header.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,8 +20,13 @@ header .img-wrapper {
   text-align: center;
 }
 
-.header .img-wrapper img {
-  margin: 3rem 0;
+.headerLG .img-wrapper img, .headerMD .img-wrapper {
+  padding: 3rem 0;
+}
+
+.headerMD {
+  margin-top: 2rem;
+  margin-bottom: -.7rem;
 }
 
 .navbar {
@@ -32,19 +37,27 @@ header .img-wrapper {
 
 .navbar a {
   color: #fff;
-  padding: 1rem 1.8rem;
+  padding: 1rem 1.83rem;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
 }
 
-a:link, a:visited {
+a:visited {
   text-decoration: none;
 }
 
+a:link {
+  text-decoration: none;
+  /* background-color: #439a86; */
+}
+
 .navbar a:hover, nav.is-active a:hover {
-  border-bottom: 0.3rem solid #fff;
-  padding-bottom: .6rem;
+  background-color: #439a86;
+}
+
+.topNavbar > div {
+  padding-bottom: 2px;
 }
 
 #topNavbarSM {
