@@ -150,7 +150,7 @@ a:link {
   width: 100%;
 }
 
-.text-under-img-wrapper div {
+.text-under-img-wrapper > div {
   bottom: 0;
   left: 0;
   position: absolute;
