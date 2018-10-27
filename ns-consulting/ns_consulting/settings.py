@@ -267,3 +267,5 @@ CKEDITOR_SETTINGS = {
     'language': 'ru',
     'extraPlugins': 'texttransform',
 }
+
+DJANGOCMS_PICTURE_RESPONSIVE_IMAGES = False
