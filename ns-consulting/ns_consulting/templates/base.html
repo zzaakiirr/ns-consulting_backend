@@ -100,25 +100,24 @@
     </div>
   </div>
   <div class="container main">
-    <div class="row start-xs center-md hidden-xs hidden-md hidden-sm searcher-wrapper">
+    <div class="row start-xs hidden-xs hidden-md hidden-sm searcher-wrapper">
       <div class="col-xs-10 col-sm-9 col-md-11 searcher-input-wrapper">
         <input type="text" placeholder="Поиск..." class="searcher-input">
       </div>
-      <div class="col-xs-1 end-xs col-sm-1 col-md-1 searcher-btn-wrapper">
+      <div class="col-md-1 end-xs searcher-btn-wrapper">
         <button type="submit" class="searcher-submit-btn">
           <img src="{% static "img/loupe.png" %}" alt="">
         </button>
       </div>
     </div>
     <div class="row banners">
-      <div class="col-lg-3 hidden-md hidden-lg hidden-xl">
+      <div class="col-xs-12 hidden-md hidden-lg hidden-xl banner-right-top">
         <div class="row center-xs banners-right">
-          <div href="" class="col-xs-12 col-md-12 col-lg-10 banner-right-top">
-            {% block right_top %}{% endblock right_top %}
-          </div> 
-        </div>
+          {% block right_top_mobile %}{% endblock right_top_mobile %}
+        </div> 
       </div>
-      <div class="col-lg-3">
+      </div>
+      <div class="col-xs-6 col-lg-3 last-xs last-sm first-md hidden-md">
         <div class="row center-xs banners-left">
           <div class="col-xs-12 col-md-12 col-lg-10 banner-left-top">
             {% block left_top %}{% endblock left_top %}
@@ -131,7 +130,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-md-8 col-lg-6">
         <div class="row start-xs banners-center">
           <div class="col-xs-12 banner-center-top">
             {% block center_top %}{% endblock center_top %}
@@ -141,13 +140,22 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-xs-6 col-md-4 col-lg-3 last-xs">
         <div class="row center-xs banners-right">
-          <div class="col-xs-12 col-md-12 col-lg-10 banner-right-top">
+          <div class="col-xs-12 col-md-12 col-lg-10 hidden-xs hidden-sm banner-right-top">
             {% block right_top %}{% endblock right_top %}
           </div>
           <div class="col-xs-12 col-md-12 col-lg-10 banner-right-center">
             {% block right_center %}{% endblock right_center %}
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-10 hidden-xs hidden-sm hidden-lg hidden-xl banner-left-top">
+            {% block left_top_MD %}{% endblock left_top_MD %}
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-10 hidden-xs hidden-sm hidden-lg hidden-xl banner-left-center">
+            {% block left_center_MD %}{% endblock left_center_MD %}
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-10 hidden-xs hidden-sm hidden-lg hidden-xl banner-left-bottom">
+            {% block left_bottom_MD %}{% endblock left_bottom_MD %}
           </div>
         </div>
       </div>
