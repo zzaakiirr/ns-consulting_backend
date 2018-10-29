@@ -10,7 +10,7 @@ from djangocms_file.models import File
 
 @plugin_pool.register_plugin
 class FileWithBackgoundImagePlugin(FilePlugin):
-    name = _("Ссылка на файл с изображением на фоне")
+    name = _("Файл с изображением на фоне")
     model = File
     allow_children = True
 
