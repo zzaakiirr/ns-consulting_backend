@@ -175,12 +175,22 @@ a:link {
   background-color: #fff;
 }
 
-.banners-right a:first-child {
+.banner-right-1 a,
+.banner-center-2 a,
+.banner-center-5 a {
   background-color: #439a86;
 }
 
-.banners-right a:first-child p {
+.banner-right-1 a p,
+.banner-center-2 a p,
+.banner-center-5 a p,
+.banner-left-3 a p,
+.banner-left-4 a p {
   color: #fff;
+}
+
+.banner-left-4 a {
+  background-color: #262038;
 }
 
 .banners-right .row > div,
@@ -198,7 +208,15 @@ a:link {
 .banners p {
   color: #000;
   overflow-wrap: break-word;
-  padding: 0 1.8rem;
+  padding: 0 1rem;
+}
+
+.banners p:first-child {
+  margin-top: 1.5rem;
+}
+
+.banners p:last-child {
+  margin-bottom: 1.2rem;
 }
 
 .banners img {
@@ -267,4 +285,5 @@ footer .right-col {
 footer .right-col a:not(:first-child):not(:last-child) {
   display: inline-block;
   margin: 1rem 1rem;
+}
 }
