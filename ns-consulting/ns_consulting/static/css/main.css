@@ -172,6 +172,15 @@ a:link {
 .banners a {
   display: inline-block;
   width: 100%;
+  background-color: #fff;
+}
+
+.banners-right a:first-child {
+  background-color: #439a86;
+}
+
+.banners-right a:first-child p {
+  color: #fff;
 }
 
 .banners-right .row > div,
@@ -187,6 +196,7 @@ a:link {
 }
 
 .banners p {
+  color: #000;
   overflow-wrap: break-word;
   padding: 0 1.8rem;
 }
