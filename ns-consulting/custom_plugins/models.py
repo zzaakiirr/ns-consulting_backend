@@ -8,12 +8,12 @@ from colorfield.fields import ColorField
 class FileLinkWithBackgroundColor(File):
     file_background_color = ColorField(
         verbose_name=_('Цвет фона'),
-        default='#f8f8f8'
+        default='#ffffff'
     )
 
 
 class LinkWithBackgroundColor(Link):
     background_color = ColorField(
         verbose_name=_('Цвет фона'),
-        default='#f8f8f8'
+        default='#ffffff'
     )
