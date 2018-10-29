@@ -90,8 +90,6 @@ a:link {
 }
 
 .searcher-wrapper:hover .searcher-input {
-  -webkit-box-shadow: 0 0 .2rem #232c3a;
-  -moz-box-shadow: 0 0 .2rem #232c3a;
   box-shadow: 0 0 .2rem #232c3a;
 }
 
@@ -114,6 +112,21 @@ a:link {
   padding-left: 1.1rem;
   position: relative;
   width: 107%;
+}
+
+.searcher-input::-webkit-input-placeholder {
+  font-family: Intro-Book;
+  font-size: 1.1rem;
+}
+
+.searcher-input:-ms-input-placeholder {
+  font-family: Intro-Book;
+  font-size: 1.1rem;
+}
+
+.searcher-input::-ms-input-placeholder {
+  font-family: Intro-Book;
+  font-size: 1.1rem;
 }
 
 .searcher-input::placeholder {
@@ -144,78 +157,74 @@ a:link {
   position: relative;
 }
 
-.text-under-img-wrapper img,
-.banner-center-center > img  {
+.text-under-img-wrapper img {
   margin-bottom: -.31rem;
   width: 100%;
 }
 
-.text-under-img-wrapper div {
+.text-under-img-wrapper > div {
   bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
 }
 
-div[class*="banner-left"],
-div[class*="banner-right"],
-.banner-center-center {
+.banners a {
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+}
+
+.banner-right-1 a,
+.banner-center-2 a,
+.banner-center-5 a {
+  background-color: #439a86;
+}
+
+.banner-right-1 a p,
+.banner-center-2 a p,
+.banner-center-5 a p,
+.banner-left-3 a p,
+.banner-left-4 a p {
+  color: #fff;
+}
+
+.banner-left-4 a {
+  background-color: #262038;
+}
+
+.banners-right .row > div,
+.banner-right-1-XS .row a,
+.banners-left .row > div,
+.banners-center .row > div {
   margin-bottom: 1.3rem;
   padding: 0;
 }
 
-.banner-left-top {
+.banners-center .row > div {
   padding: 0;
 }
-.banners a {
-  display: inline-block;
+
+.banners p {
+  color: #000;
+  overflow-wrap: break-word;
+  padding: 0 1rem;
+}
+
+.banners p:first-child {
+  margin-top: 1.5rem;
+}
+
+.banners p:last-child {
+  margin-bottom: 1.2rem;
+}
+
+.banners img {
   width: 100%;
 }
 
-div[class*="banner-center"],
-.banner-left-bottom,
-.banners-center,
-.banner-right-top,
-.banner-right-center {
-  padding: 0;
-}
-
-.banner-content {
-  padding-left: .3rem; 
-  padding-right: .3rem; 
-}
-
-.banner-header {
-  font-family: Intro-Bold;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-}
-
-.banner-left-top {
-  background-color: #f8f8f8;
-}
-
-.banner-right-top .banner-content,
-.banner-center-center .banner-content,
-.banner-left-top .banner-content {
-  color: #000;
-}
-
-.banner-left-bottom,
-.banner-left-center,
-.banner-center-top {
-  color: #fff;
-}
-
-.banner-left-top .banner-text {
-  display: block;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.banner-left-center {
-  display: inline-block;
-  padding: 1rem 1.5rem;
+.banners-center p {
+  padding: 0 1.3rem;
 }
 
 .poll {
@@ -231,70 +240,9 @@ div[class*="banner-center"],
   font-size: 1.2rem;
 }
 
-.banner-left-center .angle-down {
-  background: no-repeat url(../img/angle-down.png);
-  display: inline-block;
-  height: 11px;
-  width: 25px;
-}
-
-.banner-left-bottom a.banner-header {
-  display: inline-block;
-  margin-bottom: 1rem;
-}
-
 .banner-center-center > img {
   width: 100%;
   margin-bottom: -.33rem;
-}
-
-.banner-center-top .banner-header,
-.banner-center-center p.banner-header {
-  margin: 0;
-}
-
-.banner-center-top .banner-content {
-  padding: .5rem 1.5rem;
-  padding-right: 10rem;
-}
-
-.banner-center-top .banner-header {
-  font-size: 1.7rem;
-}
-
-.banner-center-top .banner-text {
-  font-size: .9rem;
-}
-
-.banner-center-center .banner-content {
-  background-color: #f8f8f8;
-  padding: .7rem 1rem;
-}
-
-.banner-center-center .banner-text {
-  font-size: .8rem;
-  margin: .3rem 0;
-}
-
-p.banner-header-2 {
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: .7rem;
-  margin-bottom: 0;
-}
-
-.banner-right-top .banner-content,
-.banner-right-center .banner-content {
-  padding: 0 1rem;
-}
-
-.banner-right-top .banner-text {
-  margin-top: .3rem;
-}
-
-.banner-right-top img {
-  max-width: 100%;
 }
 
 .poll-question {
@@ -312,7 +260,7 @@ p.banner-header-2 {
   font-family: Intro-Bold;
   font-size: 1rem;
   max-width: 100%;
-  padding:  .5rem 0;
+  padding: .5rem 0;
   text-transform: uppercase;
   width: 9999px;
 }
@@ -337,4 +285,5 @@ footer .right-col {
 footer .right-col a:not(:first-child):not(:last-child) {
   display: inline-block;
   margin: 1rem 1rem;
+}
 }

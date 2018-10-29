@@ -50,9 +50,8 @@
     float: left;
   }
 
-  .banners-right:not(:first-child) {
-    padding-left: 2.2rem;
-    padding-right: 0;
+  .banners-center .row > div {
+    padding: 0;
   }
 
   #bottomNavbar {
@@ -61,6 +60,12 @@
 
   footer .container {
     padding: 0;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+  .banners-center .row {
+    padding-right: 1.3rem;
   }
 }
 
@@ -123,12 +128,39 @@
 }
 
 @media (max-width: 767px) {
+  .banner-left-1 a {
+    background-color: #262038;
+  }
+
+  .banner-left-1 a p {
+    color: #fff;
+  }
+
+  .banner-left-4 a {
+    background-color: #1c1c40;
+  }
+
+  .banner-right-4-MD a {
+    background-color: #439a86;
+  }
+
+  .banner-right-4-MD p {
+    color: #fff;
+  }
+
   footer .right-col {
     padding-left: 0;
+  }
 }
 
 @media only screen and (max-width: 575px) {
   .container {
     max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .banners p span {
+    font-size: .9rem !important;
   }
 }
