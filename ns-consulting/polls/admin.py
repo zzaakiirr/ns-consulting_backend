@@ -5,7 +5,7 @@ from .models import Choice, Poll
 
 class ChoiceInline(admin.TabularInline):
     model = Choice
-    readonly_fields = ('votes',)
+    readonly_fields = ('votes', 'percent')
     extra = 3
 
 
