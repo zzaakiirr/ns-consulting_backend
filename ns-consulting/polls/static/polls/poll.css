@@ -1,0 +1,25 @@
+a.poll-choice {
+  background-color: #f8f8f8;
+  color: #000;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  border-radius: .5rem;
+  width: 100%;
+  padding: .4rem 0;
+}
+
+.poll-choice:hover {
+  cursor: pointer;
+  background-color: #439a86;
+}
+
+.poll-header {
+  text-transform: uppercase;
+  font-family: Intro-Bold;
+  font-size: 1.2rem;
+}
+
+.poll-question {
+  padding: 0 .4rem;
+}
