@@ -22,10 +22,10 @@ def update_percents(poll):
         if choice.percent > max_percentage_choice.percent:
             max_percentage_choice = choice
 
-    change_total_percentage_to_100(total_percentage)
+    change_total_percentage_to_100(max_percentage_choice, total_percentage)
 
 
-def change_total_percentage_to_100(total_percentage):
+def change_total_percentage_to_100(max_percentage_choice, total_percentage):
     if total_percentage == 98:
         max_percentage_choice.percent += 2
     elif total_percentage == 99:
