@@ -1,13 +1,38 @@
-{% extends 'polls/base.html' %}
+{% extends "fullwidth.html" %}
+{% load static %}
 
-{% block polls_content %}
-<h1>{{ poll.question }}</h1>
+{% block right_5 %}
+  <link rel="stylesheet" href="{% static "polls/poll.css" %}">
+  <style>
+    .filled-poll-choice {
+      margin-bottom: 1rem;
+      background-color: #f8f8f8;
+      border-radius: .5rem;
+    }
 
-<ul>
-{% for choice in poll.choice_set.all %}
-    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
-{% endfor %}
-</ul>
-
-<a href="{% url 'polls:detail' poll.id %}">Vote again?</a>
-{% endblock %}
+    .filled-poll-choice > div {
+      color: #fff;
+      font-size: 1.1rem;
+      padding: .4rem;
+      height: 100%;
+      background-color: #439a86;
+      border-top-left-radius: .5rem;
+      border-bottom-left-radius: .5rem;
+    }
+  </style>
+  <div class="poll">
+    <div class="banner-content">
+      <p class="poll-header">Опрос</p>
+      <p class="poll-question">{{ poll.question }}</p>
+    </div>
+    {% for choice in poll.choice_set.all %}
+      <div class="col-xs-12">
+        {{ choice.choice_text }}
+        <div class="filled-poll-choice">
+          <div class="col-xs-12 start-xs" style="width: {{ choice.percent }}%;">{{ choice.percent }}%</div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  </div>
+{% endblock right_5 %}
