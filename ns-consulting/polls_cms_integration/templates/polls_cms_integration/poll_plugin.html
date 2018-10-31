@@ -1,18 +1,16 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "polls/poll.css" %}">
+
 <div class="poll">
   <div class="banner-content">
     <p class="poll-header">Опрос</p>
     <p class="poll-question">{{ instance.poll.question }}</p>
   </div>
-  <form action="{% url 'polls:vote' instance.poll.id %}" method="post">
-    {% csrf_token %}
-    <div class="poll-choices">
-      {% for choice in instance.poll.choice_set.all %}
-        <p class="start-xs poll-choice">
-          <input type="radio" id="poll-choice-{{id}}}" name="choice" value="{{ choice.id }}">
-          <label for="poll-choice-{{id}}">{{ choice.choice_text }}</label>
-        </p>
-      {% endfor %}
+  {% for choice in instance.poll.choice_set.all %}
+    <div class="col-xs-12">
+      <a href="{% url 'polls:vote' instance.poll.id choice.id %}" class="poll-choice">
+        {{ choice.choice_text }}
+      </a>
     </div>
-    <button class="submit-btn" type="submit" value="Vote">Ответить</button>
-  </form>
+  {% endfor %}
 </div>

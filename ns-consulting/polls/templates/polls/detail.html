@@ -1,0 +1,11 @@
+<div class="poll">
+  <div class="banner-content">
+    <p class="poll-header">Опрос</p>
+    <p class="poll-question">{{ instance.poll.question }}</p>
+  </div>
+  {% for choice in instance.poll.choice_set.all %}
+    <a href="{% url 'polls:vote' instance.poll.id choice.id %}">
+      {{ choice.choice_text }}
+    </a>
+  {% endfor %}
+</div>
