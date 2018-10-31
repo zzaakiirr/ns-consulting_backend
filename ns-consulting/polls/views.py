@@ -5,6 +5,8 @@ from django.views import generic
 
 from .models import Choice, Poll
 
+from .vote_helpers import update_percents
+
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
@@ -31,4 +33,5 @@ def vote(request, poll_id, choice_id):
     selected_choice.votes += 1
     selected_choice.save()
 
+    update_percents(poll)
     return HttpResponseRedirect(reverse('polls:results', args=(poll.id,)))
