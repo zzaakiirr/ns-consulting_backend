@@ -268,3 +268,54 @@ CKEDITOR_SETTINGS = {
 }
 
 DJANGOCMS_PICTURE_RESPONSIVE_IMAGES = False
+
+CMS_PLACEHOLDER_CONF = {
+    'left 1': {
+        'name': gettext("Левый 1")
+    },
+    'left 2': {
+        'name': gettext("Левый 2")
+    },
+    'left 3': {
+        'name': gettext("Левый 3")
+    },
+    'left 4': {
+        'name': gettext("Левый 4")
+    },
+    'left 5': {
+        'name': gettext("Левый 5")
+    },
+    'center 1': {
+        'name': gettext("Цетральный 1")
+    },
+    'center 2': {
+        'name': gettext("Цетральный 2")
+    },
+    'center 3': {
+        'name': gettext("Цетральный 3")
+    },
+    'center 4': {
+        'name': gettext("Цетральный 4")
+    },
+    'center 5': {
+        'name': gettext("Цетральный 5")
+    },
+    'center 6': {
+        'name': gettext("Цетральный 6")
+    },
+    'right 1': {
+        'name': gettext("Правый 1")
+    },
+    'right 2': {
+        'name': gettext("Правый 2")
+    },
+    'right 3': {
+        'name': gettext("Правый 3")
+    },
+    'right 4': {
+        'name': gettext("Правый 4")
+    },
+    'right 5': {
+        'name': gettext("Правый 5")
+    },
+}
