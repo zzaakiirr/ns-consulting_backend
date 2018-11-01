@@ -1,5 +1,6 @@
 from django.utils.translation import ugettext_lazy as _
 
+from cms.models import CMSPlugin
 from django.db import models
 
 
@@ -31,3 +32,10 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.choice_text
+
+
+class PollPluginModel(CMSPlugin):
+    poll = models.ForeignKey(Poll)
+
+    def __unicode__(self):
+        return self.poll.question
