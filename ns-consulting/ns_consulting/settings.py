@@ -143,7 +143,6 @@ INSTALLED_APPS = (
     'custom_plugins',
     'colorfield',
     'polls',
-    'polls_cms_integration',
 )
 
 LANGUAGES = (

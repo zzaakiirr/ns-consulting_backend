@@ -1,0 +1,18 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "polls/poll.css" %}">
+<link rel="stylesheet" href="{% static "polls/results.css" %}">
+
+<div class="poll">
+  <div class="banner-content">
+    <p class="poll-header">Опрос</p>
+    <p class="poll-question">{{ poll.question }}</p>
+  </div>
+  {% for choice in instance.poll.choice_set.all %}
+    <div class="col-xs-12">
+      {{ choice.choice_text }}
+      <div class="filled-poll-choice">
+        <div class="col-xs-12 start-xs" style="width: {{ choice.percent }}%;">{{ choice.percent }}%</div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

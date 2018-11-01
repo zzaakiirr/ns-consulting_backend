@@ -34,4 +34,5 @@ def vote(request, poll_id, choice_id):
     selected_choice.save()
 
     update_percents(poll)
+    request.session['poll_has_been_voted'] = True
     return HttpResponseRedirect(reverse('polls:results', args=(poll.id,)))

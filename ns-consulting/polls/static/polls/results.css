@@ -1,0 +1,15 @@
+.filled-poll-choice {
+  margin-bottom: 1rem;
+  background-color: #f8f8f8;
+  border-radius: .5rem;
+}
+
+.filled-poll-choice > div {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: .4rem;
+  height: 100%;
+  background-color: #439a86;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
