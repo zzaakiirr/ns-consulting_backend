@@ -169,9 +169,8 @@ CMS_LANGUAGES = {
 
 CMS_TEMPLATES = (
     ## Customize this
-    ('fullwidth.html', 'Fullwidth'),
-    ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('main_page.html', 'Главная страница'),
+    ('left_and_right_save.html', 'Блоки слева и справа'),
 )
 
 CMS_PERMISSION = True
