@@ -1,0 +1,12 @@
+.banners-center h1 {
+  font-size: 1.35rem;
+}
+.search-result:hover {
+  opacity: .5;
+}
+.search-result p:not(:first-child):not(:nth-child(2)) {
+  display: none;
+}
+.search-result p:first-child {
+  margin-top: .5rem;
+}

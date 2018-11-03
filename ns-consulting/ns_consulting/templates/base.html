@@ -102,10 +102,12 @@
   <div class="container main">
     <div class="row start-xs hidden-xs hidden-md hidden-sm searcher-wrapper">
       <div class="col-xs-10 col-sm-9 col-md-11 searcher-input-wrapper">
-        <input type="text" placeholder="Поиск..." class="searcher-input">
+        <form id="searchForm" action="{% url 'posts:post_search_list_view' %}" method="get" accept-charset="utf-8">
+          <input class="searcher-input" id="searchBox" name="q" type="text" placeholder="Поиск..." >
+        </form>
       </div>
       <div class="col-md-1 end-xs searcher-btn-wrapper">
-        <button type="submit" class="searcher-submit-btn">
+        <button id="searchButton" class="searcher-submit-btn" type="submit">
           <img src="{% static "img/loupe.png" %}" alt="">
         </button>
       </div>
@@ -225,6 +227,7 @@
     </div>
   </footer>
   <script src='{% static "js/navbarBurger.js" %}'></script>
+  <script src='{% static "js/searchButton.js" %}'></script>
   {% render_block "js" %}
 </body>
 </html>

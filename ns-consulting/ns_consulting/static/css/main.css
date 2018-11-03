@@ -93,6 +93,10 @@ a:link {
   box-shadow: 0 0 .2rem #232c3a;
 }
 
+.searcher-wrapper form {
+  height: 100%;
+}
+
 .searcher-btn-wrapper {
   background-color: #fff;
   margin-bottom: .1rem;
@@ -202,10 +206,13 @@ a:link {
 }
 
 .banners-center .row > div {
+  background-color: #fff;
   padding: 0;
 }
 
-.banners p {
+.banners p,
+.banners h1,
+.banners h2 {
   color: #000;
   overflow-wrap: break-word;
   padding: 0 1rem;
