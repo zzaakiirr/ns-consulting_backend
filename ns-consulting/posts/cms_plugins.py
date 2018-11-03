@@ -14,7 +14,5 @@ class PostPluginPublisher(TextPlugin):
     render_template = "posts/post_plugin.html"
 
     def render(self, context, instance, placeholder):
-        context.update({'name': instance.name, 'instance': instance, })
-        return super(PostPluginModel, self).render(
-            context, instance, placeholder
-        )
+        context.update({'instance': instance, })
+        return context

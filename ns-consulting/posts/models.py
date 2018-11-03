@@ -7,11 +7,6 @@ from djangocms_text_ckeditor.models import AbstractText
 
 
 class PostPluginModel(AbstractText):
-    title = models.CharField(
-        verbose_name=_('Заголовок'),
-        max_length=255,
-        blank=True,
-    )
     link = PageField(
         verbose_name=_('Ссылка'),
         blank=False,
