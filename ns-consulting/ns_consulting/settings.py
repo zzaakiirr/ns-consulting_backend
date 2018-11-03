@@ -143,6 +143,7 @@ INSTALLED_APPS = (
     'custom_plugins',
     'colorfield',
     'polls',
+    'posts',
 )
 
 LANGUAGES = (
@@ -233,17 +234,6 @@ CKEDITOR_SETTINGS = {
                 'Outdent', 'Indent', '-',
                 'Blockquote', '-',
                 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'
-            ],
-        },
-        {
-            'name': 'links',
-            'items': ['Link', 'Unlink', 'Anchor', ],
-        },
-        {
-            'name': 'insert',
-            'items': [
-                'Table', 'HorizontalRule', 'Smiley',
-                'SpecialChar', 'PageBreak',
             ],
         },
         {
