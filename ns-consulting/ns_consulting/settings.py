@@ -67,6 +67,7 @@ STATIC_ROOT = os.path.join(DATA_DIR, 'static')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'ns_consulting', 'static'),
     os.path.join(BASE_DIR, 'polls', 'static'),
+    os.path.join(BASE_DIR, 'posts', 'static'),
 )
 SITE_ID = 1
 
@@ -143,6 +144,7 @@ INSTALLED_APPS = (
     'custom_plugins',
     'colorfield',
     'polls',
+    'posts',
 )
 
 LANGUAGES = (
@@ -233,17 +235,6 @@ CKEDITOR_SETTINGS = {
                 'Outdent', 'Indent', '-',
                 'Blockquote', '-',
                 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'
-            ],
-        },
-        {
-            'name': 'links',
-            'items': ['Link', 'Unlink', 'Anchor', ],
-        },
-        {
-            'name': 'insert',
-            'items': [
-                'Table', 'HorizontalRule', 'Smiley',
-                'SpecialChar', 'PageBreak',
             ],
         },
         {

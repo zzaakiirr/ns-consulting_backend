@@ -1,0 +1,16 @@
+{% extends "left_and_right_save.html" %}
+{% load static %}
+
+{% block center_1 %}
+  <link rel="stylesheet" href="{% static "posts/main.css" %}">
+  <h1>Результаты поиска по запросу "{{ search_query }}":</h1>
+  {% if posts %}
+    {% for post in posts %}
+      <a class="search-result" href="{{ post.link.get_absolute_url }}">
+        {{ post.body|safe }}
+      </a>
+    {% endfor %}
+  {% else %}
+    <p>По вашему запросу ничего не найдено</p>
+  {% endif %}
+{% endblock center_1 %}
