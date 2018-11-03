@@ -1,12 +1,17 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
-from cms.models import CMSPlugin
 from cms.models.fields import PageField
 from djangocms_text_ckeditor.models import AbstractText
 
 
 class PostPluginModel(AbstractText):
+    title = models.CharField(
+        verbose_name=_('Заголовок'),
+        default='',
+        max_length=255,
+        blank=False,
+    )
     link = PageField(
         verbose_name=_('Ссылка'),
         blank=False,
