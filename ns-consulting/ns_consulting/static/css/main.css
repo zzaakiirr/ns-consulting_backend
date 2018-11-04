@@ -9,19 +9,24 @@
 }
 
 html {
-  background-color: #f8f8f8;
+  background-color: #f1f1f1;
   font-family: Intro-Book;
 }
 
 .headerLG .img-wrapper, .headerMD .img-wrapper {
-  background-image: url(../img/header.png);
+  background-image: url(../img/header-LG.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 50% 10%;
   margin-top: -1rem;
   text-align: center;
 }
 
-.headerLG .img-wrapper img, .headerMD .img-wrapper {
+.headerMD .img-wrapper {
+  background-image: url(../img/header-MD.png);
+  background-position: 50% 15%;
+}
+
+.headerLG .img-wrapper img, .headerMD .img-wrapper img {
   padding: 3rem 0;
 }
 
