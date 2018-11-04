@@ -95,7 +95,15 @@
       </div>
     </nav>
   </header>
-    <div class="row hidden-lg hidden-xl headerMD">
+  <div class="row banner-right-1-XS-wrapper">
+    <div class="col-xs-12 hidden-md hidden-lg hidden-xl banners-right banner-right-1 banner-right-1-XS">
+        {% block right_1_XS %}{% endblock right_1_XS %}
+        <a href="" id="arrowRight" class="arrow-right">
+          <img src="{% static "img/arrow-right.png" %}" alt="arrow-right">
+        </a>
+    </div>
+  </div>
+  <div class="row hidden-lg hidden-xl headerMD">
     <div class="col-xs-12 img-wrapper">
       <img src="{% static "img/logo-MD.png" %}" alt="Logo">
     </div>
@@ -114,11 +122,6 @@
       </div>
     </div>
     <div class="row banners">
-      <div class="col-xs-12 hidden-md hidden-lg hidden-xl banners-right banner-right-1 banner-right-1-XS">
-        <div class="row center-xs">
-          {% block right_1_XS %}{% endblock right_1_XS %}
-        </div> 
-      </div>
       <div class="col-xs-6 col-lg-3 hidden-md last-xs last-sm first-lg banners-left">
         <div class="row center-xs">
           <div class="col-xs-12 col-md-12 col-lg-10 banner-left-1">
@@ -229,6 +232,7 @@
   </footer>
   <script src='{% static "js/navbarBurger.js" %}'></script>
   <script src='{% static "js/searchButton.js" %}'></script>
+  <script src='{% static "js/arrowRight.js" %}'></script>
   {% render_block "js" %}
 </body>
 </html>

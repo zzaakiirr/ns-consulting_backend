@@ -135,14 +135,9 @@
   #topNavbarSM a:first-child {
     margin-top: 1.5rem;
   }
-}
 
-@media (min-width: 453px) and (max-width: 512px) {
-  .topNavbar .row {
-    margin-bottom: .4rem;
-  }
-
-  .navbar span:last-child {
-    margin-top: .5rem;
+  .banner-right-1-XS p {
+    margin: .5rem 0;
+    padding-left: .9rem;
   }
 }

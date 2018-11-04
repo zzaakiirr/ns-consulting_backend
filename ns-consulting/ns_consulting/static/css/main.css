@@ -1,3 +1,22 @@
+.banner-right-1-XS {
+  position: relative;
+}
+
+.banner-right-1-XS p {
+  margin: .7rem 0;
+  padding-left: 1.3rem;
+}
+
+.banner-right-1-XS p:not(:nth-child(2)) {
+  display: none;
+}
+
+a.arrow-right {
+  position: absolute;
+  right: 3.9%;
+  top: 26%;
+}
+
 @font-face {
   font-family: Intro-Book;
   src: url(../fonts/Intro-Book.otf);
@@ -190,7 +209,8 @@ a:link {
 
 .banner-right-1 a,
 .banner-center-2 a,
-.banner-center-5 a {
+.banner-center-5 a,
+.banner-right-1-XS-wrapper {
   background-color: #439a86;
 }
 
@@ -236,7 +256,7 @@ a:link {
   margin-bottom: 1.2rem;
 }
 
-.banners img {
+.banners img:not(.arrow-right) {
   width: 100%;
 }
 

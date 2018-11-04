@@ -96,10 +96,6 @@
 }
 
 @media (max-width: 453px) {
-  html {
-    font-size: 12px;
-  }
-
   .poll-choice {
     margin-left: .5rem;
   }
@@ -184,5 +180,21 @@
   .headerLG .img-wrapper {
     background-size: cover;
     background-position: 50% 20%;
+  }
+}
+
+@media (min-width: 453px) and (max-width: 512px) {
+  .topNavbar .row {
+    margin-bottom: .4rem;
+  }
+
+  .navbar span:last-child {
+    margin-top: .5rem;
+  }
+}
+
+@media (max-width: 397px) {
+  .banner-right-1-XS p span {
+    font-size: .75rem !important;
   }
 }
