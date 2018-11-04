@@ -179,3 +179,10 @@
     background-position: 55% 10%;
   }
 }
+
+@media (min-width: 1913px) {
+  .headerLG .img-wrapper {
+    background-size: cover;
+    background-position: 50% 20%;
+  }
+}
