@@ -11,7 +11,7 @@
   }
 }
 
-@media (min-width: 993px) and (max-width: 1157px) {
+@media (min-width: 992px) and (max-width: 1157px) {
   .headerMD {
     display: block;
   }
@@ -195,6 +195,49 @@
 
 @media (max-width: 397px) {
   .banner-right-1-XS p span {
-    font-size: .75rem !important;
+    font-size: .8rem !important;
   }
 }
+
+@media (max-width: 767px) {
+  .logo-sm-img {
+    display: none;
+  }
+
+  .logo-xs-img {
+    display: inline-block;
+    padding-top: .5rem;
+    padding-bottom: .2rem;
+  }
+
+  a.logoSmall {
+    padding: 0;
+    height: 95%;
+    max-width: 50%;
+  }
+
+  .navbar span:last-child {
+    margin-top: .5rem;
+  }
+
+  .topNavbar .row {
+    margin-bottom: .3rem;
+  }
+
+  #topNavbarSM a:first-child {
+    margin-top: 1.5rem;
+  }
+
+  .searcher-submit-btn {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .searcher-submit-btn img {
+    padding: .4rem 0;
+  }
+
+  .banner-right-1-XS p {
+    margin: .5rem 0;
+    padding-left: .9rem;
+  }
