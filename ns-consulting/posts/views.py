@@ -26,6 +26,15 @@ class PostSearchListView(ListView):
             reduce(
                 operator.and_,
                 (Q(body__icontains=q) for q in query_list)
+            ) | reduce(
+                operator.and_,
+                (Q(body__icontains=q.capitalize()) for q in query_list)
+            ) | reduce(
+                operator.and_,
+                (Q(body__icontains=q.upper()) for q in query_list)
+            ) | reduce(
+                operator.and_,
+                (Q(body__icontains=q.lower()) for q in query_list)
             )
         ).exclude(id__in=get_duplicate_ids())
 
