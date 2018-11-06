@@ -55,7 +55,7 @@ html {
 
 .headerMD {
   margin-bottom: -.7rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .navbar {
@@ -227,7 +227,6 @@ a:link {
 }
 
 .banners-right .row > div,
-.banner-right-1-XS .row a,
 .banners-left .row > div,
 .banners-center .row > div {
   margin-bottom: 1.3rem;
@@ -277,4 +276,7 @@ footer .right-col a:not(:first-child):not(:last-child) {
   display: inline-block;
   margin: 1rem 1rem;
 }
-}
+
+/* .navbar span:last-child {
+margin-top: 1.3rem;
+} */

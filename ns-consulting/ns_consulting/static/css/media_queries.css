@@ -5,8 +5,14 @@
   }
 }
 
-@media (min-width: 1157px) {
+@media (min-width: 1158px) {
   .logoSmall, .searchSmall {
+    display: none;
+  }
+}
+
+@media (max-width: 1158px) {
+  .navbar span.navbar-LG-item {
     display: none;
   }
 }
@@ -20,14 +26,6 @@
 @media (max-width: 1157px) {
   .headerMD .img-wrapper {
     background-position: 55% 15%;
-  }
-
-  .navbar span:last-child {
-    margin-top: 1.3rem;
-  }
-
-  .topNavbar {
-    margin-bottom: -1.6rem;
   }
 
   .searcher-wrapper {
@@ -93,6 +91,9 @@
     padding-right: 0;
   }
 
+  .topNavbar {
+    margin-bottom: -.12rem;
+  }
 }
 
 @media (max-width: 453px) {
@@ -183,16 +184,6 @@
   }
 }
 
-@media (min-width: 453px) and (max-width: 512px) {
-  .topNavbar .row {
-    margin-bottom: .4rem;
-  }
-
-  .navbar span:last-child {
-    margin-top: .5rem;
-  }
-}
-
 @media (max-width: 397px) {
   .banner-right-1-XS p span {
     font-size: .8rem !important;
@@ -220,10 +211,6 @@
     margin-top: .5rem;
   }
 
-  .topNavbar .row {
-    margin-bottom: .3rem;
-  }
-
   #topNavbarSM a:first-child {
     margin-top: 1.5rem;
   }
@@ -231,6 +218,7 @@
   .searcher-submit-btn {
     margin-top: 0;
     padding: 0;
+    height: 93%;
   }
 
   .searcher-submit-btn img {
@@ -241,3 +229,19 @@
     margin: .5rem 0;
     padding-left: .9rem;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  .navbar span:last-child {
+    margin-top: 1.3rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .banners {
+    margin-top: 0;
+  }
+  .main {
+    margin-top: .6rem;
+  }
+}
