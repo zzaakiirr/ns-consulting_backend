@@ -17,12 +17,12 @@
   top: 15%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 1.875rem;
   padding: 0 3rem;
 }
 
 .overlay a {
-  padding: 8px;
+  padding: .5rem;
   text-decoration: none;
   font-size: 36px;
   color: #818181;
@@ -36,8 +36,8 @@
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: 5%;
+  right: 5%;
   font-size: 60px;
 }
 
@@ -71,10 +71,8 @@
   z-index: 1;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
   .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+    font-size: 3.125rem;
   }
 } 
