@@ -1,0 +1,35 @@
+.banners-left .row > div,
+.banners-center .row > div,
+.banners-right .row > div {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.banners-left .row > div::after,
+.banners-center .row > div::after,
+.banners-right .row > div::after {
+  content: "";
+  z-index: -1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.banners-left .row > div:hover,
+.banners-right .row > div:hover {
+  -webkit-transform: scale(1.10, 1.10);
+  transform: scale(1.10, 1.10);
+}
+
+.banners-center .row > div:hover {
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+
+.banners-left .row > div:hover:after,
+.banners-center .row > div:hover:after,
+.banners-right .row > div:hover:after {
+  opacity: 1;
+}
