@@ -41,16 +41,8 @@
   font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-} 
-
 .popup-form {
+  margin-left: -20px !important;
   padding: 0;
   margin: 0;
   position: relative;
@@ -73,7 +65,16 @@
 .popup-button-wrapper {
   max-width: 10px;
   padding: 0;
+  padding-left: 1rem;
   margin: 0;
   height: 100%;
   z-index: 1;
 }
+
+@media screen and (max-height: 450px) {
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+} 
