@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="{% static "css/media_queries.css" %}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link href="{% static "css/hamburgers.css" %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static "css/searchPopup.css" %}">
   {% render_block "css" %}
 </head>
 <body>
@@ -58,7 +59,7 @@
             <img class="logo-xs-img" src="{% static "img/logo-XS.png" %}" alt="logo">
           </a>
           <div class="col-xs-3 search-button-MD end-xs">
-            <button type="submit" class="searcher-submit-btn">
+            <button type="submit" class="searcher-submit-btn" onclick="openNav()">
               <img src="{% static "img/loupe.png" %}" alt="">
             </button>
           </div>
@@ -231,6 +232,19 @@
       </div>
     </div>
   </footer>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="row center-xs overlay-content">
+      <form class="col-xs-11 popup-form" id="searchFormMobile" action="{% url 'posts:post_search_list_view' %}" method="get" accept-charset="utf-8">
+        <input class="" id="searchBox" name="q" type="text" placeholder="Поиск..." >
+      </form>
+        <div class="col-xs-1 popup-button-wrapper">
+          <button id="searchButtonMobile" class="popup-button" type="submit">
+            <img src="{% static "img/loupe.png" %}" alt="">
+          </button>
+        </div>
+    </div>
+  </div>
   <script src='{% static "js/navbarBurger.js" %}'></script>
   <script src='{% static "js/searchButton.js" %}'></script>
   <script src='{% static "js/arrowRight.js" %}'></script>
