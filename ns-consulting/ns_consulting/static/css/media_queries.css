@@ -47,6 +47,16 @@
     padding: 0;
   }
 
+  #topNavbarSM div:first-child a {
+    margin-top: 1.5rem;
+  }
+
+  #topNavbarSM a {
+    font-size: 1.125rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
   .navbar a:not(.logoSmall) {
     display: none;
   }
@@ -211,8 +221,14 @@
     margin-top: .5rem;
   }
 
-  #topNavbarSM a:first-child {
+  #topNavbarSM div:first-child a {
     margin-top: 1.5rem;
+  }
+
+  #topNavbarSM a {
+    font-size: .9rem;
+    padding-bottom: .8rem;
+    padding-top: .8rem;
   }
 
   .searcher-submit-btn {
