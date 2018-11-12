@@ -63,8 +63,8 @@
 
 .popup-button-wrapper {
   position: absolute;
-  right: -.5rem;
-  top: 7%;
+  right: -1.5%;
+  top: 9%;
 }
 
 @media screen and (max-width: 450px) {
