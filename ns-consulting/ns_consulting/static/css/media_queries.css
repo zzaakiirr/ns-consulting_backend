@@ -251,6 +251,10 @@
   .navbar span:last-child {
     margin-top: 1.3rem;
   }
+
+  .overlay a.closebtn {
+    right: 2.5%;
+  }
 }
 
 @media (max-width: 575px) {

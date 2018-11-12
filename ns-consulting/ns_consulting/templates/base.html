@@ -59,7 +59,7 @@
             <img class="logo-xs-img" src="{% static "img/logo-XS.png" %}" alt="logo">
           </a>
           <div class="col-xs-3 search-button-MD end-xs">
-            <button type="submit" class="searcher-submit-btn" onclick="openNav()">
+            <button type="submit" class="searcher-submit-btn" onclick="openSearchMobile()">
               <img src="{% static "img/loupe.png" %}" alt="">
             </button>
           </div>
@@ -233,12 +233,12 @@
     </div>
   </footer>
   <div id="searchMobile" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSearchMobile()">&times;</a>
     <div class="row center-xs overlay-content">
-      <form class="col-xs-12 center-xs popup-form" id="searchFormMobile" action="{% url 'posts:post_search_list_view' %}" method="get" accept-charset="utf-8">
+      <form class="col-xs-12 center-xs popup-form" action="{% url 'posts:post_search_list_view' %}" method="get" accept-charset="utf-8">
         <input class="" id="searchBox" name="q" type="text" placeholder="Поиск..." >
         <div class="popup-button-wrapper">
-          <button id="searchButtonMobile" class="popup-button" type="submit">
+          <button class="popup-button" type="submit">
             <img src="{% static "img/loupe.png" %}" alt="">
           </button>
         </div>
