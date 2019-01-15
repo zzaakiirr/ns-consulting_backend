@@ -6,7 +6,7 @@ if (hamburgers.length > 0) {
     hamburger.addEventListener('click', function() {
       this.classList.toggle('is-active');
       var navbarSM = document.getElementById('topNavbarSM');
-      if(!navbarSM.className.includes('is-active')) {
+      if(!navbarSM.classList.contains('is-active')) {
         navbarSM.className += ' is-active';
         navbarSM.style.display = 'block';
       } else {

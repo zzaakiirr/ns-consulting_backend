@@ -118,7 +118,9 @@ a:link {
 }
 
 .searcher-wrapper:hover .searcher-input {
-  box-shadow: 0 0 .2rem #232c3a;
+  -webkit-box-shadow: 0 0 .2rem #232c3a;
+     -moz-box-shadow: 0 0 .2rem #232c3a;
+          box-shadow: 0 0 .2rem #232c3a;
 }
 
 .searcher-wrapper form {
@@ -157,6 +159,16 @@ a:link {
 }
 
 .searcher-input::-ms-input-placeholder {
+  font-family: Intro-Book;
+  font-size: 1.1rem;
+}
+
+.searcher-input:-moz-placeholder {
+  font-family: Intro-Book;
+  font-size: 1.1rem;
+}
+
+.searcher-input::-moz-placeholder {
   font-family: Intro-Book;
   font-size: 1.1rem;
 }
