@@ -1,8 +1,10 @@
-document.getElementById('searchButton').onclick = () => 
+document.getElementById('searchButton').onclick = function() { 
   document.getElementById('searchForm').submit();
+};
 
-document.getElementById('searchButtonMobile').onclick = () => 
+document.getElementById('searchButtonMobile').onclick = function() {
   document.getElementById('searchFormMobile').submit();
+};
 
 function openNav() {
   document.getElementById('searchMobile').style.height = '100%';
