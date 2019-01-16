@@ -127,6 +127,10 @@ a:link {
   height: 100%;
 }
 
+.search-button-MD {
+  text-align: right;
+}
+
 .searcher-btn-wrapper {
   background-color: #fff;
   margin-bottom: .1rem;
@@ -136,6 +140,7 @@ a:link {
   padding-top: 0.5rem;
   position: relative;
   right: 1%;
+  text-align: right;
 }
 
 .searcher-input {
