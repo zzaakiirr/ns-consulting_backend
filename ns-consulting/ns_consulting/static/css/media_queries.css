@@ -132,16 +132,6 @@
   }
 }
 
-@media (max-width: 991px) {
-  footer .left-col {
-    padding-left: 0;
-  }
-
-  footer .right-col {
-    padding-right: 0;
-  }
-}
-
 @media (max-width: 767px) {
   .banner-left-1 a {
     background-color: #262038;
@@ -163,8 +153,19 @@
     color: #fff;
   }
 
-  footer .right-col {
+  footer .right-col-md {
+    display: none;
+  }
+
+  footer .right-col-sm, footer .left-col {
     padding-left: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .right-col-sm {
+    display: none;
   }
 }
 
