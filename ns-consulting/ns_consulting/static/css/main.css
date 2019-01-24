@@ -36,26 +36,25 @@ html {
   display: none;
 }
 
-.headerLG .img-wrapper, .headerMD .img-wrapper {
+.headerLG, .headerMD {
   background-image: url(../img/header-LG.png);
   background-repeat: no-repeat;
   background-position: 50% 10%;
   margin-top: -1rem;
   text-align: center;
-}
-
-.headerMD .img-wrapper {
-  background-image: url(../img/header-MD.png);
-  background-position: 50% 15%;
-}
-
-.headerLG .img-wrapper img, .headerMD .img-wrapper img {
-  padding: 3rem 0;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .headerMD {
-  margin-bottom: -.7rem;
-  margin-top: 1rem;
+  background-image: url(../img/header-MD.png);
+  background-position: 50% 15%;
+  margin-top: .0rem;
+}
+
+.headerLG img, .headerMD {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .navbar {

@@ -47,8 +47,10 @@
           box-sizing: border-box;
   display: -webkit-box;
   display: -moz-box;
-  display: -ms-flexbox;
+  display: box;
   display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
      -moz-box-flex: 0;
