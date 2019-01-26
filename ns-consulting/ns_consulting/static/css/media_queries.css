@@ -6,7 +6,7 @@
 }
 
 @media (min-width: 1158px) {
-  .logoSmall, .search-button-MD {
+  a.logoSmall, .search-button-MD {
     display: none;
   }
 }
