@@ -211,8 +211,11 @@
     padding-bottom: .2rem;
   }
 
+  a.logoSmall img {
+    margin: 0;
+  }
+
   a.logoSmall {
-    padding: 0;
     height: 95%;
     max-width: 50%;
   }
