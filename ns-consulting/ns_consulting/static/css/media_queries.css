@@ -158,7 +158,6 @@
   }
 
   footer .right-col-sm, footer .left-col {
-    padding-left: 0;
     width: 100%;
   }
 }
@@ -264,5 +263,31 @@
   }
   .main {
     margin-top: .6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  footer.container {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+}
+
+@media (max-width: 991px) {
+  footer.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  footer .right-col-sm, footer .left-col {
+    margin-left: -.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  footer.container {
+    padding-left: 1rem;
   }
 }
