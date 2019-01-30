@@ -95,6 +95,10 @@
     padding-right: .6rem;
   }
 
+  .banner-right-1-XS > div {
+    margin-bottom: 0;
+  }
+
   .banners-right:not(:first-child) {
     padding-left: .6rem;
     padding-right: 0;
