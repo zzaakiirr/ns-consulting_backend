@@ -92,12 +92,11 @@
   }
 
   .banners-left {
-    padding-right: 1.1rem;
-    padding-left: 0;
+    padding-right: .6rem;
   }
 
   .banners-right:not(:first-child) {
-    padding-left: 1.1rem;
+    padding-left: .6rem;
     padding-right: 0;
   }
 
@@ -292,5 +291,35 @@
 @media (max-width: 580px) {
   footer.container {
     padding-left: 1rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .banners-left {
+    padding-left: 1.2rem;
+  }
+
+  .banners-right {
+    padding-right: 1.2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .banners-right {
+    padding-right: 0;
+  }
+
+  .banners-center {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .banners-left {
+    padding-left: 0;
+  }
+
+  .banners-right {
+    padding-left: 0;
   }
 }

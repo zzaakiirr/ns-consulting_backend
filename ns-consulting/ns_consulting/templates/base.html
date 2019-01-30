@@ -31,7 +31,6 @@
   <link rel="stylesheet" href="{% static "css/main.css" %}">
   <link rel="stylesheet" href="{% static "css/banners_hower.css" %}">
   <link rel="stylesheet" href="{% static "css/media_queries.css" %}">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link href="{% static "css/hamburgers.css" %}" rel="stylesheet">
   <link rel="stylesheet" href="{% static "css/search_popup.css" %}">
   {% render_block "css" %}
@@ -122,85 +121,79 @@
       </div>
     </div>
     <div class="row banners">
-      <div class="col-xs-6 col-lg-3 hidden-md last-xs last-sm first-lg banners-left">
-        <div class="row center-xs">
-          <div class="col-xs-12 col-md-12 col-lg-10 banner-left-1">
-            {% block left_1 %}{% endblock left_1 %}
-          </div>
-          <div class="col-xs-12 col-md-12 col-lg-10">
-            {% block left_2 %}{% endblock left_2 %}
-          </div>
-          <div class="col-xs-12 col-md-12 col-lg-10 banner-left-3">
-            {% block left_3 %}{% endblock left_3 %}
-          </div>
-          <div class="col-xs-12 col-md-12 col-lg-10 banner-left-4">
-            {% block left_4 %}{% endblock left_4 %}
-          </div>
-          <div class="col-xs-12 col-md-12 col-lg-10 hidden-xs hidden-sm">
-            {% block left_5 %}{% endblock left_5 %}
-          </div>
+      <div class="col-xs-6 col-lg-3 hidden-md last-xs last-sm first-lg center-xs banners-left">
+        <div class="col-xs-12 col-md-12 col-lg-12 banner-left-1">
+          {% block left_1 %}{% endblock left_1 %}
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          {% block left_2 %}{% endblock left_2 %}
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-12 banner-left-3">
+          {% block left_3 %}{% endblock left_3 %}
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-12 banner-left-4">
+          {% block left_4 %}{% endblock left_4 %}
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-12 hidden-xs hidden-sm">
+          {% block left_5 %}{% endblock left_5 %}
         </div>
       </div>
-      <div class="col-md-8 col-lg-6 banners-center">
-        <div class="row start-xs">
-          <div class="col-xs-12">
-            {% block center_1 %}{% endblock center_1 %}
-          </div>
-          <div class="col-xs-12 banner-center-2">
-            {% block center_2 %}{% endblock center_2 %}
-          </div>
-          <div class="col-xs-12">
-            {% block center_3 %}{% endblock center_3 %}
-          </div>
-          <div class="col-xs-12 hidden-lg hidden-xl">
-            {% block center_4 %}{% endblock center_4 %}
-          </div>
-          <div class="col-xs-12 hidden-xs hidden-sm hidden-lg hidden-xl banner-center-5">
-            {% block center_5 %}{% endblock center_5 %}
-          </div>
-          <div class="col-xs-12 hidden-xs hidden-sm hidden-lg hidden-xl">
-            {% block center_6 %}{% endblock center_6 %}
-          </div>
+      <div class="col-md-8 col-lg-6 start-xs banners-center">
+        <div class="col-xs-12">
+          {% block center_1 %}{% endblock center_1 %}
+        </div>
+        <div class="col-xs-12 banner-center-2">
+          {% block center_2 %}{% endblock center_2 %}
+        </div>
+        <div class="col-xs-12">
+          {% block center_3 %}{% endblock center_3 %}
+        </div>
+        <div class="col-xs-12 hidden-lg hidden-xl">
+          {% block center_4 %}{% endblock center_4 %}
+        </div>
+        <div class="col-xs-12 hidden-xs hidden-sm hidden-lg hidden-xl banner-center-5">
+          {% block center_5 %}{% endblock center_5 %}
+        </div>
+        <div class="col-xs-12 hidden-xs hidden-sm hidden-lg hidden-xl">
+          {% block center_6 %}{% endblock center_6 %}
         </div>
       </div>
-      <div class="col-xs-6 col-md-4 col-lg-3 last-xs banners-right">
-        <div class="row center-xs">
-          <div class="col-xs-12 col-lg-10 hidden-xs hidden-sm first-md banner-right-1">
-            {% block right_1 %}{% endblock right_1 %}
-          </div>
-          <div class="col-xs-12 col-lg-10 hidden-md">
-            {% block right_2 %}{% endblock right_2 %}
-          </div>
-          <div class="col-lg-10 hidden-xs hidden-sm hidden-md">
-            {% block right_3 %}{% endblock right_3 %}
-          </div>
-          <div class="col-xs-12 col-lg-10 hidden-md banner-right-4-MD">
-            {% block right_4 %}{% endblock right_4 %}
-          </div>
-          <div class="col-xs-12 col-md-12 col-lg-10 first-md last-lg banner-right-5">
-            {% block right_5 %}{% endblock right_5 %}
-          </div>
-          <div class="col-md-12 hidden-xs hidden-sm hidden-lg hidden-xl">
-            {% block left_1_MD %}{% endblock left_1_MD %}
-          </div>
-          <div class="col-md-12 hidden-xs hidden-sm hidden-lg hidden-xl">
-            {% block left_2_MD %}{% endblock left_2_MD %}
-          </div>
-          <div class="col-md-12 hidden-xs hidden-sm hidden-lg hidden-xl banner-left-3">
-            {% block left_3_MD %}{% endblock left_3_MD %}
-          </div>
-          <div class="col-md-12 hidden-xs hidden-sm hidden-lg hidden-xl banner-left-4">
-            {% block left_4_MD %}{% endblock left_4_MD %}
-          </div>
-          <div class="col-md-12 hidden-lg hidden-xl">
-            {% block right_2_MD %}{% endblock right_2_MD %}
-          </div>
-          <div class="col-md-12 hidden-xs hidden-sm hidden-lg hidden-xl">
-            {% block right_4_MD %}{% endblock right_4_MD %}
-          </div>
-          <div class="col-xs-12 hidden-lg hidden-xl">
-            {% block left_5_XS_MD %}{% endblock left_5_XS_MD %}
-          </div>
+      <div class="col-xs-6 col-md-4 col-lg-3 last-xs center-xs banners-right">
+        <div class="col-xs-12 col-lg-12 hidden-xs hidden-sm first-md banner-right-1">
+          {% block right_1 %}{% endblock right_1 %}
+        </div>
+        <div class="col-xs-12 col-lg-12 hidden-md">
+          {% block right_2 %}{% endblock right_2 %}
+        </div>
+        <div class="col-lg-12 hidden-xs hidden-sm hidden-md">
+          {% block right_3 %}{% endblock right_3 %}
+        </div>
+        <div class="col-xs-12 col-lg-12 hidden-md banner-right-4-MD">
+          {% block right_4 %}{% endblock right_4 %}
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-12 first-md last-lg banner-right-5">
+          {% block right_5 %}{% endblock right_5 %}
+        </div>
+        <div class="col-md-12 hidden-xs hidden-sm hidden-lg hidden-xl">
+          {% block left_1_MD %}{% endblock left_1_MD %}
+        </div>
+        <div class="col-md-12 hidden-xs hidden-sm hidden-lg hidden-xl">
+          {% block left_2_MD %}{% endblock left_2_MD %}
+        </div>
+        <div class="col-md-12 hidden-xs hidden-sm hidden-lg hidden-xl banner-left-3">
+          {% block left_3_MD %}{% endblock left_3_MD %}
+        </div>
+        <div class="col-md-12 hidden-xs hidden-sm hidden-lg hidden-xl banner-left-4">
+          {% block left_4_MD %}{% endblock left_4_MD %}
+        </div>
+        <div class="col-md-12 hidden-lg hidden-xl">
+          {% block right_2_MD %}{% endblock right_2_MD %}
+        </div>
+        <div class="col-md-12 hidden-xs hidden-sm hidden-lg hidden-xl">
+          {% block right_4_MD %}{% endblock right_4_MD %}
+        </div>
+        <div class="col-xs-12 hidden-lg hidden-xl">
+          {% block left_5_XS_MD %}{% endblock left_5_XS_MD %}
         </div>
       </div>
     </div>
