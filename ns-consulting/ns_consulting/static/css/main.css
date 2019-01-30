@@ -1,3 +1,8 @@
+body {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .banner-right-1-XS {
   position: relative;
 }
@@ -242,16 +247,29 @@ a:link {
   background-color: #262038;
 }
 
-.banners-right .row > div,
-.banners-left .row > div,
-.banners-center .row > div {
-  margin-bottom: 1.3rem;
+.banners-left {
+  padding-left: 1.5rem;
+  padding-right: .9rem;
+}
+
+.banners-right {
+  padding-right: 1.5rem;
+  padding-left: .9rem;
+}
+
+.banners-center > div {
   padding: 0;
 }
 
-.banners-center .row > div {
-  background-color: #fff;
+.banners-right > div,
+.banners-left > div,
+.banners-center > div {
   padding: 0;
+  margin-bottom: 1.3rem;
+}
+
+.banners-center > div {
+  background-color: #fff;
 }
 
 .banners p,
@@ -309,3 +327,12 @@ a.logoSmall {
   margin: 1rem 0;
 }
 
+#topNavbar {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.banner-right-1-XS-wrapper {
+  padding-left: .4rem;
+  padding-right: .4rem;
+}
