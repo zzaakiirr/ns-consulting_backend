@@ -95,6 +95,10 @@
     padding-right: .6rem;
   }
 
+  .banner-right-1-XS > div {
+    margin-bottom: 0;
+  }
+
   .banners-right:not(:first-child) {
     padding-left: .6rem;
     padding-right: 0;
@@ -323,3 +327,12 @@
     padding-left: 0;
   }
 }
+
+@media (max-width: 991px) {
+  .banners-left {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
