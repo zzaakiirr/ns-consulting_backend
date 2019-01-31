@@ -120,6 +120,22 @@
         </button>
       </div>
     </div>
+    <div class="row banners-center-xs-sm">
+      <div class="col-xs-12 start-xs banners-center">
+        <div class="col-xs-12">
+          {% block center_1 %}{% endblock center_1 %}
+        </div>
+        <div class="col-xs-12 banner-center-2">
+          {% block center_2 %}{% endblock center_2 %}
+        </div>
+        <div class="col-xs-12">
+          {% block center_3 %}{% endblock center_3 %}
+        </div>
+        <div class="col-xs-12">
+          {% block center_4 %}{% endblock center_4 %}
+        </div>
+      </div>
+    </div>
     <div class="row banners">
       <div class="col-xs-6 col-lg-3 hidden-md center-xs banners-left">
         <div class="col-xs-12 col-md-12 col-lg-12 banner-left-1">
@@ -138,7 +154,7 @@
           {% block left_5 %}{% endblock left_5 %}
         </div>
       </div>
-      <div class="col-md-8 col-lg-6 start-xs banners-center">
+      <div class="col-md-8 col-lg-6 start-xs banners-center banners-center-md-lg">
         <div class="col-xs-12">
           {% block center_1 %}{% endblock center_1 %}
         </div>
@@ -148,13 +164,10 @@
         <div class="col-xs-12">
           {% block center_3 %}{% endblock center_3 %}
         </div>
-        <div class="col-xs-12 hidden-lg hidden-xl">
-          {% block center_4 %}{% endblock center_4 %}
-        </div>
-        <div class="col-xs-12 hidden-xs hidden-sm hidden-lg hidden-xl banner-center-5">
+        <div class="col-xs-12 hidden-lg hidden-xl banner-center-5">
           {% block center_5 %}{% endblock center_5 %}
         </div>
-        <div class="col-xs-12 hidden-xs hidden-sm hidden-lg hidden-xl">
+        <div class="col-xs-12 hidden-lg hidden-xl">
           {% block center_6 %}{% endblock center_6 %}
         </div>
       </div>
