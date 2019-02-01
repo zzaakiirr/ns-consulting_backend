@@ -48,7 +48,7 @@
   }
 
   #topNavbarSM div:first-child a {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
 
   #topNavbarSM a {
@@ -225,10 +225,6 @@
 
   .navbar span:last-child {
     margin-top: .5rem;
-  }
-
-  #topNavbarSM div:first-child a {
-    margin-top: 1.5rem;
   }
 
   #topNavbarSM a {

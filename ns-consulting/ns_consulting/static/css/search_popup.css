@@ -13,11 +13,6 @@
 }
 
 .overlay-content {
-  position: relative;
-  top: 7%;
-  width: 100%;
-  text-align: center;
-  margin-top: 1.875rem;
   padding: 0 3rem;
 }
 
@@ -30,41 +25,52 @@
   transition: 0.3s;
 }
 
+.overlay a:active {
+  outline: none;
+}
+
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
 }
 
 .overlay .closebtn {
-  position: absolute;
-  right: 5%;
-  font-size: 60px;
+  text-align: right;
+}
+
+.overlay .popup-button:hover {
+  cursor: pointer;
 }
 
 .popup-form {
-  padding: 0;
-  margin: 0;
-  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+     -moz-box-orient: horizontal;
+  -webkit-box-direction: normal;
+     -moz-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .popup-form input {
-  padding-left: .5rem;
-  width: 101%;
-  height: 40px;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+          flex-grow: 2;
   border: none;
-  font-size: 1.1rem;
-  overflow: hidden;
+  padding: 0 .5rem;
+  height: 40px;
 }
 
 .popup-button {
   padding: 0;
   background-color: #fff;
   border: none;
-}
-
-.popup-button-wrapper {
-  position: absolute;
-  right: -1.5%;
-  top: 9%;
 }
 
 @media screen and (max-width: 450px) {

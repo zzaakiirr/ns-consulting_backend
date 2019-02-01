@@ -1,6 +1,7 @@
 body {
   margin-right: 0;
   margin-left: 0;
+  margin-top: .4rem;
 }
 
 .banner-right-1-XS {
@@ -93,19 +94,11 @@ a:link {
   display: none;
 }
 
-#topNavbarSM .navbar-item {
-  margin: 0 1rem;
-}
-
 #topNavbarSM a {
   display: inline-block;
   padding: 0;
   padding-top: 1rem;
   text-align: center; 
-}
-
-#topNavbarSM div:last-child a {
-  padding-bottom: 1.2rem;
 }
 
 .navbar .hamburger {
