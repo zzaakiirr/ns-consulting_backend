@@ -336,3 +336,14 @@
   }
 }
 
+@media (min-width: 768px) {
+  .banners-center-xs-sm {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .banners-center-md-lg {
+    display: none;
+  }
+}
