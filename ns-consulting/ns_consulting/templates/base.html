@@ -73,22 +73,22 @@
       </div>
     </nav>
     <nav class="row hidden-md start-xs navbar" id="topNavbarSM">
-      <div class="col-xs-12 navbar-item">
+      <div class="col-xs-12">
         <a href="">Главная</a>
       </div>
-      <div class="col-xs-12 navbar-item">
+      <div class="col-xs-12">
         <a href="">О союзе</a>
       </div>
-      <div class="col-xs-12 navbar-item">
+      <div class="col-xs-12">
         <a href="">Услуги</a>
       </div>
-      <div class="col-xs-12 navbar-item">
+      <div class="col-xs-12">
         <a href="">Топ-5 событий</a>
       </div>
-      <div class="col-xs-12 navbar-item">
+      <div class="col-xs-12">
         <a href="">Семинары</a>
       </div>
-      <div class="col-xs-12 navbar-item">
+      <div class="col-xs-12">
         <a href="">Контакты</a>
       </div>
       <div class="col-xs-12">
@@ -238,15 +238,15 @@
     </div>
   </footer>
   <div id="searchMobile" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeSearchMobile()">&times;</a>
+    <div class="row overlay-content">
+      <a href="javascript:void(0)" class="col-xs-12 closebtn" onclick="closeSearchMobile()">&times;</a>
+    </div>
     <div class="row center-xs overlay-content">
-      <form class="col-xs-12 center-xs popup-form" action="{% url 'posts:post_search_list_view' %}" method="get" accept-charset="utf-8">
+      <form class="col-xs-12 popup-form" action="{% url 'posts:post_search_list_view' %}" method="get" accept-charset="utf-8">
         <input class="" id="searchBox" name="q" type="text" placeholder="Поиск..." >
-        <div class="popup-button-wrapper">
-          <button class="popup-button" type="submit">
-            <img src="{% static "img/loupe.png" %}" alt="">
-          </button>
-        </div>
+        <button class="popup-button" type="submit">
+          <img src="{% static "img/loupe.png" %}" alt="">
+        </button>
       </form>
     </div>
   </div>
