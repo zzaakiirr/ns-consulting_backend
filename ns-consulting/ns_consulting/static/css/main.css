@@ -20,7 +20,7 @@ body {
 a.arrow-right {
   position: absolute;
   right: 3%;
-  top: 29%;
+  top: 2%;
 }
 
 @font-face {
@@ -48,8 +48,6 @@ html {
   background-position: 50% 10%;
   margin-top: -1rem;
   text-align: center;
-  margin-left: -8px;
-  margin-right: -8px;
 }
 
 .headerMD {
@@ -320,12 +318,6 @@ a.logoSmall {
   margin: 1rem 0;
 }
 
-#topNavbar {
-  padding-left: .5rem;
-  padding-right: .5rem;
-}
-
 .banner-right-1-XS-wrapper {
-  padding-left: .4rem;
-  padding-right: .4rem;
+  padding: .2rem 0;
 }

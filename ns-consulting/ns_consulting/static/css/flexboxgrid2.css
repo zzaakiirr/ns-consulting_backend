@@ -289,7 +289,6 @@
   -webkit-flex-basis: 50%;
           flex-basis: 50%;
   max-width: 50%;
-  width: 50%;
 }
 
 .col-xs-7 {
@@ -785,6 +784,7 @@
     -webkit-flex-basis: 33.33333333%;
             flex-basis: 33.33333333%;
     max-width: 33.33333333%;
+    width: 250px;
   }
 
   .col-md-5 {
@@ -813,6 +813,7 @@
     -webkit-flex-basis: 66.66666667%;
             flex-basis: 66.66666667%;
     max-width: 66.66666667%;
+    width: 500px;
   }
 
   .col-md-9 {
@@ -1051,6 +1052,7 @@
     -webkit-flex-basis: 25%;
             flex-basis: 25%;
     max-width: 25%;
+    width: 290px;
   }
 
   .col-lg-4 {
@@ -1072,6 +1074,7 @@
     -webkit-flex-basis: 50%;
             flex-basis: 50%;
     max-width: 50%;
+    width: 600px;
   }
 
   .col-lg-7 {
