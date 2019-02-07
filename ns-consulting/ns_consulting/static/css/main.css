@@ -88,8 +88,18 @@ a:link {
   background-color: #439a86;
 }
 
+#topNavbar {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+#topNavbar > div {
+  float: left;
+}
+
 #topNavbarSM {
   display: none;
+  height: 380px;
 }
 
 #topNavbarSM a {

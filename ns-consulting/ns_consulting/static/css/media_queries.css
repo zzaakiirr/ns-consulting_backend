@@ -5,25 +5,25 @@
   }
 }
 
-@media (min-width: 1158px) {
+@media (min-width: 1170px) {
   a.logoSmall, .search-button-MD {
     display: none;
   }
 }
 
-@media (max-width: 1157px) {
+@media (max-width: 1169px) {
   .navbar span.navbar-LG-item {
     display: none;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1157px) {
+@media (min-width: 992px) and (max-width: 1169px) {
   .headerMD {
     display: block;
   }
 }
 
-@media (max-width: 1157px) {
+@media (max-width: 1169px) {
   .headerMD .img-wrapper {
     background-position: 55% 15%;
   }
@@ -45,10 +45,6 @@
   .navbar {
     margin-top: -0.47rem;
     padding: 0;
-  }
-
-  #topNavbarSM div:first-child a {
-    margin-top: 1rem;
   }
 
   #topNavbarSM a {
@@ -102,10 +98,6 @@
   .banners-right:not(:first-child) {
     padding-left: .6rem;
     padding-right: 0;
-  }
-
-  .topNavbar {
-    margin-bottom: -.15rem;
   }
 }
 
@@ -204,6 +196,10 @@
 }
 
 @media (max-width: 767px) {
+  .navbar {
+    height: 47px;
+  }
+
   .logo-sm-img {
     display: none;
   }
@@ -220,11 +216,15 @@
 
   a.logoSmall {
     height: 95%;
-    max-width: 50%;
+    max-width: 100%;
   }
 
   .navbar span:last-child {
     margin-top: .5rem;
+  }
+
+  #topNavbarSM {
+    height: 300px;
   }
 
   #topNavbarSM a {
@@ -249,13 +249,17 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
+@media (min-width: 768px) and (max-width: 1169px) {
   .navbar span:last-child {
     margin-top: 1.3rem;
   }
 
   .overlay a.closebtn {
     right: 2.5%;
+  }
+
+  .navbar {
+    height: 85px;
   }
 }
 
