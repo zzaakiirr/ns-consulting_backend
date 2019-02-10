@@ -41,36 +41,32 @@
     <div class="hidden-sm headerLG">
       <img src="{% static "img/logo-LG.png" %}" alt="Logo">
     </div>
-    <nav class="row center-xs navbar" id="topNavbar">
-      <div class="col-xs-12 topNavbar" style="width: 100%;">
-        <div class="row">
-          <div class="col-xs-3" style="width: 25%;">
-            <button class="hamburger hamburger--spin" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
-          </div>
-          <div class="col-xs-6 logoSmall-wrapper" style="width: 50%;">
-            <a href="" class="logoSmall">
-              <img class="logo-sm-img" src=" {% static "img/logo-SM.png" %}" alt="logo">
-              <img class="logo-xs-img" src="{% static "img/logo-XS.png" %}" alt="logo">
-            </a>
-          </div>
-          <div class="col-xs-3 search-button-MD" style="width: 25%;">
-            <button type="submit" class="searcher-submit-btn" onclick="openSearchMobile()">
-              <img src="{% static "img/loupe.png" %}" alt="">
-            </button>
-          </div>
-        </div>
-        <span class="navbar-LG-item"><a href="">Главная</a></span>
-        <span class="navbar-LG-item"><a href="">О союзе</a></span>
-        <span class="navbar-LG-item"><a href="">Услуги</a></span>
-        <span class="navbar-LG-item"><a href="">Топ-5 событий</a></span>
-        <span class="navbar-LG-item"><a href="">Семинары</a></span>
-        <span class="navbar-LG-item"><a href="">Контакты</a></span>
-        <span class="navbar-LG-item"><a href="">Партнеры</a></span>
+    <nav class="center-xs navbar" id="topNavbar">
+      <div style="width: 25%;">
+        <button class="hamburger hamburger--spin" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
+      <div class="logoSmall-wrapper" style="width: 50%;">
+        <a href="" class="logoSmall">
+          <img class="logo-sm-img" src=" {% static "img/logo-SM.png" %}" alt="logo">
+          <img class="logo-xs-img" src="{% static "img/logo-XS.png" %}" alt="logo">
+        </a>
+      </div>
+      <div class="search-button-MD" style="width: 25%;">
+        <button type="submit" class="searcher-submit-btn" onclick="openSearchMobile()">
+          <img src="{% static "img/loupe.png" %}" alt="">
+        </button>
+      </div>
+      <span class="navbar-LG-item"><a href="">Главная</a></span>
+      <span class="navbar-LG-item"><a href="">О союзе</a></span>
+      <span class="navbar-LG-item"><a href="">Услуги</a></span>
+      <span class="navbar-LG-item"><a href="">Топ-5 событий</a></span>
+      <span class="navbar-LG-item"><a href="">Семинары</a></span>
+      <span class="navbar-LG-item"><a href="">Контакты</a></span>
+      <span class="navbar-LG-item"><a href="">Партнеры</a></span>
     </nav>
     <nav class="row hidden-md start-xs navbar" id="topNavbarSM">
       <div class="col-xs-12">
@@ -96,7 +92,7 @@
       </div>
     </nav>
   </header>
-  <div class="row banner-right-1-XS-wrapper">
+  <div class="banner-right-1-XS-wrapper">
     <div class="col-xs-12 hidden-md hidden-lg hidden-xl banners-right banner-right-1 banner-right-1-XS">
         {% block right_1_XS %}{% endblock right_1_XS %}
         <a href="" id="arrowRight" class="arrow-right">
@@ -211,7 +207,7 @@
       </div>
     </div>
   </div>
-  <nav class="row center-xs navbar" id="bottomNavbar">
+  <nav class="center-xs navbar" id="bottomNavbar">
     <div class="col-xs-12">
       <span><a href="">Главная</a></span>
       <span><a href="">О союзе</a></span>
