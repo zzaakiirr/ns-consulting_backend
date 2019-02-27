@@ -3,7 +3,7 @@
 
 {% block center_1 %}
   <link rel="stylesheet" href="{% static "posts/main.css" %}">
-  <h1>Результаты поиска по запросу "{{ search_query }}":</h1>
+  <h1 class="search-results-header">Результаты поиска по запросу "{{ search_query }}":</h1>
   {% if search_results %}
     {% for search_result in search_results %}
       <a class="search-result" href="{{ search_result.link.get_absolute_url }}">
@@ -11,6 +11,6 @@
       </a>
     {% endfor %}
   {% else %}
-    <p>По вашему запросу ничего не найдено</p>
+    <p class="search-results-empty">По вашему запросу ничего не найдено</p>
   {% endif %}
 {% endblock center_1 %}
