@@ -1,3 +1,14 @@
+h1.search-results-header {
+  margin-top: 0;
+  padding: 1rem 1rem;
+  padding-bottom: 0;
+}
+
+p.search-results-empty {
+  padding: 1rem 1rem;
+  padding-top: 0;
+}
+
 .banners-center h1 {
   font-size: 1.35rem;
 }

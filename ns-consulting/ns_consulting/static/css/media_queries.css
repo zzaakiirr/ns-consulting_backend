@@ -371,3 +371,23 @@
     display: none;
   }
 }
+
+@media (min-width: 1200px) {
+  .searcher-input-wrapper {
+    width: 1050px;
+  }
+
+  .searcher-btn-wrapper {
+    padding-left: 1.9rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .searcher-input-wrapper {
+    width: 896px;
+  }
+
+  .searcher-btn-wrapper {
+    padding-left: 1rem;
+  }
+}
