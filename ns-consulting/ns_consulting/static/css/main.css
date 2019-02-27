@@ -329,3 +329,12 @@ a.logoSmall {
 .banner-right-1-XS-wrapper {
   padding: .2rem 0;
 }
+
+.banners-left,
+.banners-center {
+  float: left;
+}
+
+.banners-right {
+  float: right;
+}
