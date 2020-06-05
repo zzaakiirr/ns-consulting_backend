@@ -4,7 +4,7 @@ aldryn-search==1.0.1
 certifi==2018.10.15
 chardet==3.0.4
 dj-database-url==0.5.0
-Django==1.11.16
+Django==1.11.29
 django-appconf==1.0.2
 django-classy-tags==0.8.0
 django-cms==3.5.2
